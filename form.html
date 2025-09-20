@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Dynamic web page: 22200006 강성민</h2>
+    <input type="text" id="write">
+    <button onclick="enrole()">등록</button>
+    <button onclick="erase()">전체 삭제</button>
+    <div id="appear">
+        
+    </div>
+    <script>
+        function enrole() {
+            let write = document.getElementById("write").value;
+            appear.innerHTML += "<div onclick>" +write+"</div>";
+            document.getElementById("write").value = "";
+        }
+
+        function erase() {
+            let appear = document.getElementById("appear");
+            appear.innerHTML = "";
+            document.getElementById("write").value = "";
+        }
+    </script>
+</body>
+</html>
